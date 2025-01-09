@@ -1,0 +1,9 @@
+time {
+    font-size: 14px;
+    font-style: italic;
+    color: gray;
+}
+
+time span {
+    font-style: normal;
+}
