@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0.5em;
+}
+
+h1 {
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    padding: 0.7em 0;
+}
+
+.flex-container {
+    border: 1px solid blue;
+    padding: 1em;
+    display: flex;
+    width: 440px;   /* 400px by default */
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    border: 2px solid black;
+    background: #eee;
+    padding: 20px;
+}
+
+.gap-row {
+    gap: 2em 0;
+}
+
+.gap-column {
+    gap: 0 2em;
+}
+
+.gap {
+    gap: 2em;
+}

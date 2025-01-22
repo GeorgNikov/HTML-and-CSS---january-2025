@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0.5em;
+}
+
+h1 {
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    padding: 0.7em 0;
+}
+
+.flex-container {
+    border: 1px solid blue;
+    padding: 1em;
+    display: flex;
+    width: 440px;   /* 400px by default */
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    border: 2px solid black;
+    background: #eee;
+    padding: 20px;
+}
+
+.flex-grow-one .flex-item {
+    flex-grow: 1;
+}
+
+.flex-grow-2nd-only .flex-item:nth-child(2) {
+    flex-grow: 1;
+}
+
+.flex-grow-proportional .flex-item:nth-child(1) {
+    flex-grow: 1;
+}
+
+.flex-grow-proportional .flex-item:nth-child(2) {
+    flex-grow: 2;
+}
+
+.flex-grow-proportional .flex-item:nth-child(3) {
+    flex-grow: 3;
+}

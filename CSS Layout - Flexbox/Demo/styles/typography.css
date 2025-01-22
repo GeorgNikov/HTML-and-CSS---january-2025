@@ -1,0 +1,11 @@
+html {
+    font: 15px/1.5 Lucida, Verdana, sans-serif;
+}
+
+body, form, input, button, textarea {
+    font: inherit;
+}
+
+p, ol, ul {
+    padding-bottom: 1.5em;
+}
