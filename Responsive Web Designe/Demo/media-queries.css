@@ -1,0 +1,9 @@
+body {
+    background: lightcoral;
+}
+
+@media (max-width: 700px) {
+    body {
+        background: lightblue;
+    }
+}

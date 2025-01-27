@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    /* background: #eee; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.keyboard {
+    background: #ddd;
+    border-radius: 0.9em;
+    box-shadow: 0 0.3em 0 0 rgb(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+    padding: 1em;
+}
+
+.keyboard .row {
+    display: flex;
+    gap: 0.6em;
+}
+
+.keyboard .key {
+    padding: 1em 1.4em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    background: #fff;
+    box-shadow: 0 0.2em 0 0 #bbb;
+    text-align: center;
+    position: relative;
+}
+
+.keyboard .key.special {
+    background: #eee;
+}
+
+.keyboard .key.grow {
+    flex: 1 1 auto;
+}
+
+.keyboard .key:active {
+    top: 2px;
+    box-shadow: 0 0.05em 0 0 #bbb;
+}
+
+.keyboard .key.enter {
+    border-bottom-right-radius: 0;
+}
+
+.keyboard .key.enter::after {
+    content: 'Enter';
+    display: block;
+    width: 8em;
+    height: 4.7em;
+    position: absolute;
+    right: -1px;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+    background: #eee;
+    box-shadow: inherit;
+}

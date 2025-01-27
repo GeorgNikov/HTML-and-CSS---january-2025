@@ -1,0 +1,44 @@
+.calendar {
+    background: #fff;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    padding: 2em;
+    margin: 4em 2em;
+    display: flex;
+}
+
+.calendar > * {
+
+}
+
+.calendar > main {
+    flex-grow: 1;
+}
+
+.calendar > aside {
+    display: flex;
+    flex-direction: column;
+}
+
+aside article {
+    flex-grow: 1;
+    padding: 2em;
+    border: 1px solid #999;
+}
+
+.row {
+    display: flex;
+}
+
+.label {
+    border: 1px solid #999;
+    text-align: center;
+    padding: 2em;
+}
+
+.row p {
+    flex-grow: 1;
+    border: 1px solid #999;
+    text-align: center;
+    padding: 2em;
+}
