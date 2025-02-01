@@ -1,0 +1,43 @@
+.container {
+    background: #fff;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+    padding: 2em;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.header,
+.content-main,
+.content-aside,
+.footer {
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    padding: 1.5em 2em;
+}
+
+.site-content {
+    padding: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.content-main {
+    flex: 1 0 auto;
+}
+
+.content-aside {
+    flex: 0 0 25ch;
+}
+
+/* Responsive Designe */
+@media (max-width: 800px) {
+    .site-content {
+        flex-direction: column;
+    }
+
+    .content-aside {
+        flex-basis: auto;
+    }
+}
