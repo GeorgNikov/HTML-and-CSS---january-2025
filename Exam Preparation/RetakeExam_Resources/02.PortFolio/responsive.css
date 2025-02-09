@@ -1,0 +1,51 @@
+@media (max-width: 600px) {
+    /* Navigation */
+    nav ul {
+      display: none;
+    }
+  
+    nav .checkbtn {
+      display: block;
+      order: 2;
+    }
+  
+    /* Header Section */
+    .site-header {
+      display: flex;
+      text-align: center;
+      flex-flow: column;
+    }
+
+    .site-header > i {
+      left: 0; /* Reset the left position */
+      margin-bottom: 20px; /* Add space below the icon */
+      font-size: 50px; /* Adjust icon size for mobile */
+      }
+    
+
+    .about {
+      display: flex;
+      align-content: center;
+      align-items: center;
+    }
+    
+    .about .about-header {
+      position: inherit;
+    }
+  
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .gallery-item img {
+      width: 200px;
+      height: 200px;
+      object-fit: fill;
+      border-radius: 8px;
+    }
+  }
+  
