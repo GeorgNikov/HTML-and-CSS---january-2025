@@ -6,7 +6,9 @@
     padding: 0;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: inherit;
 }
 
@@ -17,27 +19,56 @@ html {
 }
 
 body {
-    width: 1280px;
+    width: 1260px;
     /* width: 100vw; */
     margin: 0 auto;
 }
 
-body, input, button, select, option, textarea, form, table {
+body,
+input,
+button,
+select,
+option,
+textarea,
+form,
+table {
     font: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 1em;
     margin-bottom: 0.5em;
     font-weight: normal;
 }
 
-h1 { font-size: 2.8em; }
-h2 { font-size: 2.2em; }
-h3 { font-size: 1.8em; }
-h4 { font-size: 1.4em; }
-h5 { font-size: 1.2em; }
-h6 { font-size: 1.0em; }
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1.0em;
+}
 
 /* Layout */
 
@@ -55,34 +86,34 @@ h6 { font-size: 1.0em; }
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    gap: 3em;
+    gap: 3.7em;
 }
 
 .site-header nav ul li {
     list-style: none;
 
-    a{
+    a {
         text-decoration: none;
         color: white;
-        font-size: 1.3em;
-        font-weight: 100;
+        font-size: 1.1em;
+        font-weight: 300;
     }
 }
 
 .logo {
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, .3);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-top: 0;
     background-color: rgb(255, 255, 255, 0.1);
-    padding: 1.3em 3.5em;
+    padding: 1.3em 4em;
 }
 
 li.logo {
     font-size: 0.9em;
     letter-spacing: 0.2em;
-    font-weight: 600;
+    font-weight: 600;   /* Shrift Max weight */
     text-transform: uppercase;
 }
 
@@ -95,17 +126,17 @@ li.logo {
 
 .site-header p {
     color: white;
-    font-size: 1.7em;
+    font-size: 1.6em;
     padding-bottom: 2em;
     font-weight: 100;
 }
 
 button {
-    border-radius: 8px;
-    border: 2px solid white;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, .5);
     background-color: transparent;
     color: white;
-    font-size: 2em;
+    font-size: 1.6em;
     padding: 0.5em 2em;
     margin-bottom: 4em;
     cursor: pointer;
@@ -122,21 +153,19 @@ section .cars {
     border-bottom: 1px solid #e8e8e8;
     background: #f6f8fb;
     justify-content: center;
-    gap: 2.5em;
+    gap: 2em;
     margin-top: 8em;
 }
 
-
 .cars-info-container {
     display: flex;
-
     justify-content: center;
-    gap: 2.5em;
+    gap: 2em;
     height: auto;
 }
 
 .cars-info-container div {
-    width: 440px;
+    width: 380px;
     padding-top: 3em;
 }
 
@@ -148,34 +177,34 @@ section .cars {
 
 .car1-info h2,
 .car2-info h2 {
-    color: #787e81;
+    color: #9c9fa3;
+    font-weight: 300;
 }
 
 .car1-info p,
 .car2-info p {
-    color: #787e81;
-    font-size: 1.1em;
-    line-height: 1.4em;
+    color: #9c9fa3;
+    font-size: 1em;
+    line-height: 1.6em;
 }
 
-
 .cars-image-container img {
-    width: 440px;
+    width: 380px;
 }
 
 .read-more {
     margin-top: 2em;
-    color: #787e81;
-    border: 1px solid #787e81;
-    padding: 0.7em 1.7em;
-    font-size: 1.4em;
+    color: #9c9fa3;
+    border: 1px solid rgb(156, 159, 163, 0.5);
+    padding: 0.6em 1.5em;
+    font-size: 1.2em;
 }
 
 .cars-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.5em;
+    gap: 2em;
 }
 
 .car1-btn,
@@ -185,7 +214,8 @@ section .cars {
 }
 
 .signup {
-    background: linear-gradient(to right, #07232f, #7fb1a4, #70a291);
+    /* background: linear-gradient(to right, #07232f, #7fb1a4, #70a291); */
+    background-image: url(images/promo.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,7 +226,8 @@ section .cars {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #7ca89e;
+    border: 1px solid rgba(255, 255, 255, .2);
+    /* border: 1px solid #a0c2ba; */
     background-color: rgb(255, 255, 255, 0.1);
     color: white;
     font-size: 1em;
@@ -215,7 +246,7 @@ section .cars {
     border: none;
     border-radius: 5px;
     padding: 0.8em 1.6em;
-    color: #787e81;
+    color: #9c9fa3;
     font-size: 1.1em;
     cursor: pointer;
     white-space: nowrap;
@@ -227,6 +258,7 @@ section .cars {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2em 0;
 }
 
 .weirdest-car h2 {
@@ -234,6 +266,7 @@ section .cars {
     text-transform: uppercase;
     padding-top: 2em;
     font-size: 2.4em;
+    color: #9c9fa3;
 }
 
 .car-images {
@@ -250,13 +283,15 @@ section .cars {
 
 .more {
     margin-bottom: 0.8em;
+
 }
 
 .car-images img {
-    width: 300px;
+    width: 250px;
 }
 
 .site-footer {
+    border-top: 2px solid #e8e8e8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -266,10 +301,25 @@ section .cars {
 
 .site-footer h2 {
     font-size: 2.2em;
-    color: #787e81;
+    color: #9c9fa3;
+    margin-top: 2em;
 }
 
 .site-footer h4 {
     color: #f35886;
-    font-size: 1.8em;
+    font-size: 1.5em;
+    margin-bottom: 4em;
+}
+
+hr {
+    width: 80%;
+    color: #e8e8e8;
+    border: none;
+    border-top: 2px solid #e8e8e8;
+}
+
+.site-footer p {
+    padding: 6em;
+    color: #9c9fa3;
+    font-size: 1.1em;
 }
