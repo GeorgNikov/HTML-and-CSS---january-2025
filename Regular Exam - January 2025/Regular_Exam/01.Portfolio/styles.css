@@ -14,11 +14,12 @@ html {
 }
 
 body {
-  width: 1200px;
+  width: 1240px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0 auto;
 }
 
 .container {
@@ -28,7 +29,7 @@ body {
   align-items: center;
   background: #000;
   border-radius: 1.5em;
- 
+
 }
 
 .site-header {
@@ -53,7 +54,7 @@ body {
 
   a {
     text-decoration: none;
-    color: #616161;
+    color: #9e9b98;
   }
 }
 
@@ -75,14 +76,14 @@ main {
 }
 
 .info p {
-  color: #616161;
+  color: #9e9b98;
   font-size: 1.1em;
   line-height: 1.3em;
 }
 
 .get-started {
   background: #3f8e00;
-  padding: 1em 4em;
+  padding: 0.8em 4em;
   border: none;
   border-radius: 0.4em;
   color: white;
@@ -97,7 +98,7 @@ main {
   color: white;
 }
 
-.site-footer .buttons{
+.site-footer .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
