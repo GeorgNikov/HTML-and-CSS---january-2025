@@ -1,0 +1,86 @@
+@media (width <= 600px) {
+    body div {
+        margin: initial;
+        padding: initial;
+        display: flex;
+        align-items: center;
+ 
+    }
+
+    .Content {
+        display: flex;
+    }
+    
+    .home-links-container {
+        font-size: 1em;
+    }
+
+    .home-cta-btn {
+        padding: initial;
+        padding: 0.4em 1em;
+        margin-right: 0.1em;
+    }
+
+    .home-links-container .Anchor {
+        font-size: 1em;
+        padding: initial;
+    }
+
+    
+    .home-navbar-container {
+        align-content: center;
+    }
+    .home-navbar {
+        padding-left: 1em;
+        justify-content: flex-end;
+        gap: 2em;
+    }
+ 
+    .home-heading-container {
+        width: 100%;
+    }
+
+    .home-cards-container {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .home-feature-card,
+    .home-feature-card1,
+    .home-feature-card2 {
+        width: 100%;
+    }
+
+    .home-stats {
+        display: flex;
+        flex-direction: column;
+        margin-top: 45em;
+    }
+
+    .home-hero {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .home-hero img {
+        width: 100%;
+    }
+
+    .home-heading {
+        align-self: center;
+    }
+
+    .home-hero-text-container {
+        margin: initial;
+        width: 100%;
+        order: 1;
+    }
+
+    .home-cta-btn2 {
+        align-self: center;
+        padding: 0.em 0.7em;
+        width: 11em;
+    }
+
+}

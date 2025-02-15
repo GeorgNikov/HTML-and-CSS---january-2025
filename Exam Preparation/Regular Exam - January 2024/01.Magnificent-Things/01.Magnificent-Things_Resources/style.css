@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 12px/1.5 'Inter', sans-serif ;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    background-color: #85dcff;
+    width: 1080px;
+    height: 600px;
+    display: flex;
+    gap: 4em;
+}
+
+main {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 3;
+    padding: 3em;
+}
+
+main h1 {
+    font-size: 3.7em;
+    line-height: 1.1em;
+    padding-bottom: 0.5em;
+    margin-right: 2em;
+}
+
+main p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+aside {
+    display: block;
+    padding-right: 30px;
+    margin: auto;
+ 
+}
+
+aside img {
+    width: 350px;
+    height: auto;
+    flex-grow: 3;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+button {
+    padding: 1em 2em;
+    margin-right: 1em;
+    border-radius: 3px;
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    font-family: inherit;
+    font-weight: 300;
+    color: #202020;
+    border: 1px solid #202020;
+}
+
+.buttons .green {
+    background-color: #42aa59;
+}
+
+.buttons .green:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.buttons .white {
+    background-color: #fff;
+    border: none;
+}

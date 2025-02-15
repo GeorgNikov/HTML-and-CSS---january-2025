@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+/* Typography */
+html {
+    box-sizing: border-box;
+    font: 12px/1.5 'Lato', Helvetica;
+}
+
+body {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+body, input, button, select, option, textarea, form, table {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
+/* Layout */
+ .layout {
+    max-width: 1920px;
+    margin: 0 auto;
+ }
+
+.container {
+    padding: 0 10em;
+    background-color: white;
+}
+
+header.site-header {
+    display: flex;
+    background: #fff;
+    padding: 1.3em 10em;
+    z-index: 100;
+    align-items: center;
+}
+
+hr {
+    border: none; /* Remove default border */
+    height: 5px; /* Set thickness */
+    background-color: white; /* Set color */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Shadow below */
+}
+
+header.site-header div:first-child {
+    flex-grow: 1;
+}
+
+header.site-header .logo img {
+    width: 160px;
+}
+
+nav.site-nav ul li {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding-right: 0.6em;
+    font-weight: 700;
+
+    a {
+        text-decoration: none;
+        color: #656565;
+    }
+    
+}
+
+nav li a {
+    color: #343434;
+}
+
+.login button {
+    background: #9b5dc6;
+    padding: 0.4em 0.9em;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3em;
+    border-radius: 1.5em;
+    border: transparent;
+    margin-left: 0.8em;
+    cursor: pointer;
+}
+
+.diploma {
+    position: relative;
+    width: inherit;
+    display: flex;
+    padding: 3em 10em;
+    height: 400px;
+}
+
+.diploma-text {
+    width: 1100px;
+}
+
+.diploma-text h2 {
+    font-size: 2.5em;
+}
+
+.diploma-text p:first-of-type {
+    font-size: 1.8em;
+    padding-bottom: 1em;
+    line-height: 1.3em;
+}
+
+.diploma-text p:nth-of-type(n+2) {
+    font-size: 1.2em;
+    padding-bottom: 0.4em;
+    color:#717179;
+}
+
+.diploma-image { 
+    position: absolute;
+    top: -100px;
+    left: 63%;
+    width: 800px;
+    height: 400px;
+    border-radius: 400px 400px 0 0;
+    background-color: #54546d;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.svg-overlay {
+    position: absolute; 
+    top: -100px;  
+    right: 80px; /* Stays fixed relative to parent */
+    width: 200px; /* Fixed size, won’t scale */
+    height: auto;
+    z-index: 1;
+}
+
+
+.image-overlay {
+    z-index: 2;
+    right: 150px;  
+    margin-left: 5em;
+    height: 250px;
+}
+
+.sertificats {
+    display: flex;
+    background-color: #14162b;
+    color: white;
+    gap: 2em;
+    margin: 0 auto;
+    padding: 10em 10em;
+    align-items: center;
+} 
+
+.sertificats-text {
+    width: 1140px;
+}
+
+.sertificats-text h2 {
+    font-size: 2.6em;
+}
+
+.sertificats-text p {
+    font-size: 1.8em;
+    line-height: 1.3em;
+}
+
+.sertificats-image img {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -90px;
+    height: 320px;
+    border: transparent;
+    background-color: inherit;
+}
+
+.career {
+    display: flex;
+    margin: 5em 10em;
+    gap: 4em;
+}
+
+.career-image img {
+    width: 500px;
+}
+
+.career-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.career-text h2 {
+    font-size: 2.6em;
+    padding-bottom: 0.7em;
+}
+
+.career-text p {
+    font-size: 1.85em;
+    padding-bottom: 2em;
+    line-height: 1.3em;
+}
+
+.career button {
+    border: 1px solid #9b5dc6;
+    color: #9b5dc6;
+    background-color: white;
+    width: 270px;
+    border-radius: 3em;
+    padding: 0.7em 1.9em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: -20px;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 10em;
+    background: #2c2c3a;
+}
+
+.site-footer h4 {
+    color: #9b5dc6;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.site-footer p {
+    color: white;
+    font-size: 2em;
+
+}
+
+.site-footer ul li {
+    list-style: none;
+    line-height: 2.4em;
+    a {
+        font-size: 1.8em;
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+        line-height: 2em;
+    }
+}
+
+.items:last-child {
+    width: 400px;
+}
+
+.social {
+    padding: 2em 2em 2em 0;
+}
+
+.social a {
+    font-size: 3.4em;
+    margin-right: 0.7em;
+    color: white;
+}
+
+.social a:hover { 
+    transform: scale(1.1); 
+}
+
+.social a i {
+    transition: transform 0.3s ease;
+}
+
+.social a:hover i {
+    transform: rotate(10deg); 
+}

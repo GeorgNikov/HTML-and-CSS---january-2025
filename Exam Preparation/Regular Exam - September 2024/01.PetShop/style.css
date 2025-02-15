@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* Typography */
+
+html {
+    box-sizing: border-box;
+    font: 12px/1.5 'Lato', Helvetica;
+
+}
+
+body {
+    margin: 0 auto;
+    width: 1920px;
+}
+
+body,
+input,
+button,
+select,
+option,
+textarea,
+form,
+table {
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1.0em;
+}
+
+/* Layout */
+
+.container {
+    display: flex;
+    width: 95%;
+    margin: 3em auto;
+    padding: 2em 8em;
+    gap: 4em;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow:
+        0px -5px 10px rgba(0, 0, 0, 0.1),
+        0px 5px 10px rgba(0, 0, 0, 0.2),
+        0px 40px 60px rgba(0, 0, 0, 0.3);
+
+}
+
+.pet-image img {
+    width: 600px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .about {
+    background: #f3f3f3;
+    padding: 1em 4em;
+    border-left: 5px solid #7ab730;
+}
+
+.content .about h3 {
+    color: #7ab730;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+
+.content .about h1 {
+    text-transform: uppercase;
+    font-size: 4.2em;
+    font-weight: 900;
+    line-height: 1.2;
+    padding-top: 0.5em;
+}
+
+.content p:first-of-type {
+    font-size: 1.45em;
+    padding-left: 3em;
+    padding-top: 1em;
+    padding-bottom: 0.7em;
+    font-weight: 700;
+    color: #807e7e;
+}
+
+.mission {
+    display: flex;
+    flex-wrap: wrap;
+    background: #f3f3f3;
+    margin: initial;
+    margin: 0;
+    padding: 2em 2em;
+
+}
+
+.mission div {
+    flex: 1 1 50%;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding: 0.2em;
+    text-align: center;
+}
+
+.mission div:nth-child(1) {
+    background: #7ab730;
+    color: #f3f3f3;
+}
+
+.mission div:nth-child(2) {
+    background: #f3f3f3;
+    color: #7ab730;
+}
+
+.content .mission p {
+    font-size: 1.35em;
+    padding: initial;
+    padding-top: 0.9em;
+    line-height: 1.1em;
+    font-weight: 500;
+    color: #807e7e;
+}
