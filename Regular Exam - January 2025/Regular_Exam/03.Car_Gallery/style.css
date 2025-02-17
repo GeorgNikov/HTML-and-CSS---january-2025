@@ -113,7 +113,8 @@ h6 {
 li.logo {
     font-size: 0.9em;
     letter-spacing: 0.2em;
-    font-weight: 600;   /* Shrift Max weight */
+    font-weight: 600;
+    /* Shrift Max weight */
     text-transform: uppercase;
 }
 
@@ -189,7 +190,8 @@ section .cars {
 }
 
 .cars-image-container img {
-    width: 380px;
+    width: 400px;
+    margin-bottom: -6px;
 }
 
 .read-more {
